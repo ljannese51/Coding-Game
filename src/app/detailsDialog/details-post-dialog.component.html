@@ -1,0 +1,8 @@
+<h6 mat-dialog-title class="text-body">post publicato da: {{ data.selectedUser.name }} alias <span class="color-red">{{
+    data.selectedUser.username }}</span>
+  <br><span class="text-bold-title color-red">{{ data.selectedPost.title }}</span>
+</h6>
+<div mat-dialog-content class="margin-top-5x text-body">{{ data.selectedPost.body }}</div>
+<mat-dialog-actions [align]="'start'">
+  <button mat-button [mat-dialog-close]="true" class="button-dialog-color" *ngIf="data.btnSecondary">{{ data.btnSecondary }}</button>
+</mat-dialog-actions>

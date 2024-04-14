@@ -1,0 +1,51 @@
+<div fxLayoutGap="24px" class="grid-container-2fr">
+    <mat-card class="content">
+        <mat-list role="list">
+            <mat-list-item *ngFor="let item of postList; let i=index" role="listitem">
+                <div class="flex-container-center">
+                    <div class="initialsOut " *ngFor="let user of userList | filter: item.userId">{{user.name |
+                        initials}}</div>
+                    <div class="posts-container">
+                        <div mat-line class="text-bold-title poppins-bold">{{item.title}}</div>
+                        <div mat-line class="text-user-name" *ngFor="let user of userList | filter: item.userId">
+                            <div class="flex-container-delete-button">
+                                <div mat-line class="text-user-name" *ngFor="let user of userList | filter: item.userId">
+                                    publicato da: <span class="underline-username  poppins-regular">{{user.username}}</span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-list>
+
+    </mat-card>
+    <mat-card class="content">
+        <mat-list role="list">
+            <mat-list-item *ngFor="let post of postList2; let i=index" role="listitem">
+                <div class="flex-container-center">
+                    <div class="initialsOut" *ngFor="let user of userList | filter: post.userId"
+                        (click)="openDialog(post,user)">{{user.name | initials}}</div>
+                    <div class="posts-container">
+                        <div mat-line class="text-bold-title poppins-bold">{{post.title}}</div>
+                        <div class="flex-container-delete-button">
+                            <div mat-line class="text-user-name" *ngFor="let user of userList | filter: post.userId">
+                                publicato da: <span class="underline-username  poppins-regular">{{user.username}}</span>
+                            </div>
+                            <button color="secondary" mat-icon-button aria-label="Close" (click)="deletePost(post)">
+                                <mat-icon>delete</mat-icon>
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+            </mat-list-item>
+        </mat-list>
+
+
+    </mat-card>
+</div>

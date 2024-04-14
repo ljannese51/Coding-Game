@@ -1,0 +1,134 @@
+$title: 2rem;
+$body: 1rem;
+$username:0.75rem;
+$font-family:"Poppins", sans-serif;
+
+.text-bold-title {
+  font-size: $title !important;
+  font-weight: bold !important;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.text-body {
+  font-size: $body !important;
+  font-weight: 400 !important;
+  margin: 0;
+  padding: 0;
+}
+
+text-user-name {
+  font-size: $username !important;
+  font-weight: 400 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.poppins-thin {
+  font-family: $font-family;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: $font-family;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: $font-family;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: $font-family;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: $font-family;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: $font-family;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: $font-family;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: $font-family;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: $font-family;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: $font-family;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: $font-family;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: $font-family;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: $font-family;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: $font-family;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: $font-family;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: $font-family;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: $font-family;
+  font-weight: 900;
+  font-style: italic;
+}
